@@ -41,9 +41,7 @@ for r in tbody.find_elements(By.XPATH,'./tr'):
             row.append(c.text)
         
     data.append(row)
-
-print(data)
-
+    
 ## Pass data into a csv file
 today = datetime.today().strftime('%Y-%m-%d')
 
