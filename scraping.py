@@ -1,18 +1,25 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from datetime import datetime
+import csv
 
 url = 'https://eurovisionworld.com/odds/eurovision'
 
 driver = webdriver.Chrome()
 driver.get(url)
 
+data = []
+
+## Headers
 head = ['position', 'country', 'song', 'winning chance', 'BET365', 'UNIBET', 'COOL BET', 'BETFAIR SPORT', 'SKY BET', 'BETSSON',
     'COMEON', 'BET FRED', 'SMARKETS', '10BET', '888SPORT', 'BOYLE SPORTS', 'LAD BROKES',
     'BETWAY', 'WILLIAM HILL', 'BETFAIR EXCHANGE']
 
+data.append(head)
+
 tbody = driver.find_element(By.XPATH, '//*[@id="page"]/div[2]/main/div[1]/div[2]/div[3]/div[1]/table/tbody')
 
-print(head)
+## Getting the data
 for r in tbody.find_elements(By.XPATH,'./tr'):
     row = []
     for idx, c in enumerate(r.find_elements(By.XPATH,'./td')):
@@ -32,4 +39,16 @@ for r in tbody.find_elements(By.XPATH,'./tr'):
                 row.append(song[1:])
         else:
             row.append(c.text)
-    print(row)
+        
+    data.append(row)
+
+print(data)
+
+## Pass data into a csv file
+today = datetime.today().strftime('%Y-%m-%d')
+
+csv_file = open('./data/' + today + '-eurovision-odds.csv', 'w', encoding="utf-8")
+writer = csv.writer(csv_file)
+for data_list in data:
+    writer.writerow(data_list)
+csv_file.close()
