@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from datetime import datetime
 import csv
+import re
 
 url = 'https://eurovisionworld.com/odds/eurovision'
 
@@ -12,10 +13,17 @@ data = []
 
 today = datetime.today().strftime('%Y-%m-%d')
 
-## Headers
-head = ['date', 'position', 'country', 'song', 'winning chance', 'BET365', 'UNIBET', 'COOL BET', 'BETFAIR SPORT', 'SKY BET', 'BETSSON',
-    'COMEON', 'BET FRED', 'SMARKETS', '10BET', '888SPORT', 'BOYLE SPORTS', 'LAD BROKES',
-    'BETWAY', 'WILLIAM HILL', 'BETFAIR EXCHANGE']
+## Getting the headers
+thead = driver.find_element(By.XPATH, '//*[@id="page"]/div[2]/main/div[1]/div[2]/div[3]/div[1]/table/thead')
+
+head = ['date', 'position', 'country', 'song', 'winning chance']
+
+for r in thead.find_elements(By.XPATH, './tr'):
+    row = []
+    for c in r.find_elements(By.XPATH, './th'):
+        inner_html = c.get_attribute('innerHTML')
+        betting_house = re.sub('<br>|<span.*?>|</span>', ' ', inner_html)
+        head.append(betting_house)
 
 data.append(head)
 
