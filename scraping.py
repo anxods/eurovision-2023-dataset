@@ -10,8 +10,10 @@ driver.get(url)
 
 data = []
 
+today = datetime.today().strftime('%Y-%m-%d')
+
 ## Headers
-head = ['position', 'country', 'song', 'winning chance', 'BET365', 'UNIBET', 'COOL BET', 'BETFAIR SPORT', 'SKY BET', 'BETSSON',
+head = ['date', 'position', 'country', 'song', 'winning chance', 'BET365', 'UNIBET', 'COOL BET', 'BETFAIR SPORT', 'SKY BET', 'BETSSON',
     'COMEON', 'BET FRED', 'SMARKETS', '10BET', '888SPORT', 'BOYLE SPORTS', 'LAD BROKES',
     'BETWAY', 'WILLIAM HILL', 'BETFAIR EXCHANGE']
 
@@ -40,11 +42,11 @@ for r in tbody.find_elements(By.XPATH,'./tr'):
         else:
             row.append(c.text)
         
+    row.insert(0, today)
+        
     data.append(row)
     
 ## Pass data into a csv file
-today = datetime.today().strftime('%Y-%m-%d')
-
 csv_file = open('./data/' + today + '-eurovision-odds.csv', 'w', encoding="utf-8")
 writer = csv.writer(csv_file)
 for data_list in data:
