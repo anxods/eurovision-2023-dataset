@@ -24,6 +24,7 @@ tbody = driver.find_element(By.XPATH, '//*[@id="page"]/div[2]/main/div[1]/div[2]
 ## Getting the data
 for r in tbody.find_elements(By.XPATH,'./tr'):
     row = []
+    row.append(today)
     for idx, c in enumerate(r.find_elements(By.XPATH,'./td')):
         if idx == 1:
             continue
@@ -41,8 +42,6 @@ for r in tbody.find_elements(By.XPATH,'./tr'):
                 row.append(song[1:])
         else:
             row.append(c.text)
-        
-    row.insert(0, today)
         
     data.append(row)
     
