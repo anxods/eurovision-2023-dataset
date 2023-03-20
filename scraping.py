@@ -54,7 +54,7 @@ for r in tbody.find_elements(By.XPATH,'./tr'):
     data.append(row)
     
 ## Pass data into a csv file
-csv_file = open('./data/' + today + '-eurovision-odds.csv', 'w', encoding="utf-8")
+csv_file = open('./data/' + today + '-eurovision-odds.csv', 'w', encoding="utf-8", newline='')
 writer = csv.writer(csv_file)
 for data_list in data:
     writer.writerow(data_list)
