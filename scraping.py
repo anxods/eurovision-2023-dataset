@@ -3,7 +3,8 @@ from selenium.webdriver.common.by import By
 from datetime import datetime
 import csv
 import re
-import get_monday_sunday as mon_sun
+import get_file_week as get_week
+import get_all_files_together as get_all
 
 url = 'https://eurovisionworld.com/odds/eurovision'
 
@@ -62,5 +63,8 @@ for data_list in data:
 csv_file.close()
 
 ## Create the weekly file
-files_current_week = mon_sun.find_files_of_current_week('./data')
-mon_sun.join_files_current_week(files_current_week, './data')
+files_current_week = get_week.find_files_of_current_week('./data')
+get_week.join_files_current_week(files_current_week, './data')
+
+## Create combined file (all data)
+get_all.get_all_files_together("./data/", "./all")

@@ -36,7 +36,6 @@ def find_files_of_current_week(path):
     return matching_files
 
 def join_files_current_week(list_files, path):
-    df_list = []
     combined_df = pd.DataFrame()
 
     combined_df = pd.concat([pd.read_csv(path + '/' + filename) for filename in list_files], ignore_index=True)
