@@ -1,17 +1,23 @@
 # Eurovision 2023 Odds - Web Scraping
 
-Este mini-proyecto consiste en la recopilación de datos de probabilidad de victoria en el Festival de Eurovisión 2023, que se celebrará en Reino Unido el sábado 13 de mayo.
+This mini-project consists of collecting data on the probability of winning the Eurovision Song Contest 2023, which will be held in the United Kingdom on Saturday, May 13.
 
-[Twitter](https://twitter.com/eurovision_data)
+## Links
+- [Twitter - @eurovision_data](https://twitter.com/eurovision_data)
+- [Kaggle - Dataset](https://www.kaggle.com/datasets/anxods/eurovision-2023-betting-odds)
 
-[Kaggle](https://www.kaggle.com/datasets/anxods/eurovision-2023-betting-odds)
+## Data access
 
-## Acceso a los datos
+To make it easier to read the data, we created this spreadsheet in Google Sheets. It can be accessed [here](https://docs.google.com/spreadsheets/d/1SkcXpMeDGgqKFdMBL_9LICRxvMGqID86YT8WS91Lvmg/edit?usp=sharing)
 
-Para facilitar la redacción de los datos, creamos esta hoja de cálculos en Google Sheets [en este enlace](https://docs.google.com/spreadsheets/d/100tpJirFmftKnFV5f1Cclr61CBZkU2d380OqO6r8DeM/edit?usp=sharing)
+## How does the script work?
 
-## Funcionamiento
+With the execution of the file written in python 'scraping.py', we will obtain daily, by means of _web scraping_, the data of probability of victory of all the songs and participating artists, according to different bookmakers.
 
-Con la ejecución del archivo escrito en python 'scraping.py', obtendremos diariamente, mediante _web scraping_, los datos de probabilidad de victoria de todas las canciones y artistas participantes, en distintas casas de apuestas.
+The data, as we said before, will be obtained by means of the _web scraping_ technique, accessing the following URL and collecting the data from the table that appears in it: https://eurovisionworld.com/odds/eurovision
 
-Los datos, como comentamos, se obtendrán mediante la técnica de _web scraping_, accediendo a la siguiente URL y recogiendo los datos de la tabla que aparece en ella: https://eurovisionworld.com/odds/eurovision
+And, since April 13th we started collecting Spotify streaming data from participating songs, via the Spotify API, collecting the metrics they provide: _popularity_.
+
+Here, we can find a description of this value, and how it is calculated by the API:
+
+> The popularity of the track. The value will be between 0 and 100, with 100 being the most popular. The popularity of a track is a value between 0 and 100, with 100 being the most popular. The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had and how recent those plays are. Generally speaking, songs that are being played a lot now will have a higher popularity than songs that were played a lot in the past. Duplicate tracks (e.g. the same track from a single and an album) are rated independently. Artist and album popularity is derived mathematically from track popularity.
