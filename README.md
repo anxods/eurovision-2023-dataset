@@ -3,7 +3,7 @@
 This mini-project consists of collecting data on the probability of winning the Eurovision Song Contest 2023, which will be held in the United Kingdom on Saturday, May 13.
 
 ## Links
-- [Twitter - @eurovision_data](https://twitter.com/eurovision_data)
+- [Twitter - eurovision_data](https://twitter.com/eurovision_data): illustrations that appear in this twitter profile were designed and created by Alejandra Rodríguez Ramírez with Adobe Illustrator and Adobe Photoshop. Here you can find [her LinkedIn profile](https://es.linkedin.com/in/alejandrarodriguezramirez).
 - [Kaggle - Dataset](https://www.kaggle.com/datasets/anxods/eurovision-2023-betting-odds)
 
 ## Data access
