@@ -24,7 +24,7 @@ Here, we can find a description of this value, and how it is calculated by the A
 
 ## Data Visualization
 
-As stated before, the visualizations later posted on the Twitter account [@eurovision_data](https://twitter.com/eurovision_data), were designed and created by **Alejandra Rodríguez Ramirez** (alerodramm). 
+As stated before, the visualizations later posted on the Twitter account [@eurovision_data](https://twitter.com/eurovision_data), were designed and created by **Alejandra Rodríguez Ramirez** (*alerodramm*). 
 
 Her links, both LinkedIn and Behance:
 
