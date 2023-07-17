@@ -21,3 +21,16 @@ And, since April 13th we started collecting Spotify streaming data from particip
 Here, we can find a description of this value, and how it is calculated by the API:
 
 > The popularity of the track. The value will be between 0 and 100, with 100 being the most popular. The popularity of a track is a value between 0 and 100, with 100 being the most popular. The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had and how recent those plays are. Generally speaking, songs that are being played a lot now will have a higher popularity than songs that were played a lot in the past. Duplicate tracks (e.g. the same track from a single and an album) are rated independently. Artist and album popularity is derived mathematically from track popularity.
+
+## Data Visualization
+
+As stated before, the visualizations later posted on the Twitter account [@eurovision_data](https://twitter.com/eurovision_data), were designed and created by **Alejandra Rodríguez Ramirez**. Her links:
+
+![LinkedIn profile](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) [Alejandra Rodríguez Ramirez](https://es.linkedin.com/in/alejandrarodriguezramirez)
+![Behance link profile](https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white) [alerodramm](https://www.behance.net/alerodramm)
+
+Some examples of the visualizations are the following:
+
+![Top 10 Countries by Winning Change (11/05/2023)](assets/Portfolio_02.jpg)
+
+![Alessandra - Queen of Kings jumps up from 7th to 5th in winning odds (13/05/2023)](assets/Portfolio_022.jpg)
