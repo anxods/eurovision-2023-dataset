@@ -28,9 +28,7 @@ As stated before, the visualizations later posted on the Twitter account [@eurov
 
 Her links, both LinkedIn and Behance:
 
-[![LinkedIn profile](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://es.linkedin.com/in/alejandrarodriguezramirez)
-
-[![Behance link profile](https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white) ](https://www.behance.net/alerodramm)
+[![LinkedIn profile](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://es.linkedin.com/in/alejandrarodriguezramirez) [![Behance link profile](https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white) ](https://www.behance.net/alerodramm)
 
 Some examples of the visualizations are the following:
 
