@@ -24,11 +24,15 @@ Here, we can find a description of this value, and how it is calculated by the A
 
 ## Data Visualization
 
-As stated before, the visualizations later posted on the Twitter account [@eurovision_data](https://twitter.com/eurovision_data), were designed and created by **Alejandra Rodríguez Ramirez**. Her links:
+As stated before, the visualizations later posted on the Twitter account [@eurovision_data](https://twitter.com/eurovision_data), were designed and created by **Alejandra Rodríguez Ramirez**. 
 
-![LinkedIn profile](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) [Alejandra Rodríguez Ramirez](https://es.linkedin.com/in/alejandrarodriguezramirez)
+Her links, both LinkedIn and Behance:
 
-![Behance link profile](https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white) [alerodramm](https://www.behance.net/alerodramm)
+![LinkedIn profile](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white) 
+[Alejandra Rodríguez Ramirez](https://es.linkedin.com/in/alejandrarodriguezramirez)
+
+![Behance link profile](https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white) 
+[alerodramm](https://www.behance.net/alerodramm)
 
 Some examples of the visualizations are the following:
 
